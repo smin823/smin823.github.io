@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding-top: 60px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e293b;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+/* Services Section */
+.services {
+    padding: 100px 0;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+.service-card p {
+    color: #64748b;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.contact .btn {
+    background: white;
+    color: #667eea;
+}
+
+/* Footer */
+.footer {
+    padding: 30px 0;
+    text-align: center;
+    background: #1e293b;
+    color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
