@@ -526,6 +526,7 @@ body {
     opacity: 0;
     transition: opacity 0.4s ease;
     animation: orbit 10s linear infinite paused;
+    pointer-events: none;
 }
 
 .product-card:hover {
