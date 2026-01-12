@@ -122,28 +122,14 @@ body {
 }
 
 .logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
     font-size: 1.5rem;
     font-weight: 800;
-    text-decoration: none;
-    letter-spacing: -0.5px;
-}
-
-.logo-text {
     background: linear-gradient(135deg, var(--white) 0%, var(--gray-300) 50%, var(--primary-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-}
-
-.logo-image {
-    width: 28px;
-    height: 28px;
-    border-radius: 6px;
-    object-fit: contain;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+    letter-spacing: -0.5px;
 }
 
 .nav-links {
@@ -920,12 +906,6 @@ body {
 
     .logo {
         font-size: 1.25rem;
-    }
-
-    .logo-image {
-        width: 24px;
-        height: 24px;
-        border-radius: 5px;
     }
 
     .nav-links a {
