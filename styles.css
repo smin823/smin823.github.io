@@ -564,20 +564,10 @@ body {
 }
 
 .product-icon.fortune {
-    background: linear-gradient(135deg, #f59e0b, #f97316);
-    color: white;
+    background: transparent;
+    padding: 0;
 }
 
-.product-icon.fortune::after {
-    content: '';
-    position: absolute;
-    inset: -3px;
-    background: linear-gradient(135deg, #f59e0b, #f97316);
-    border-radius: 23px;
-    z-index: -1;
-    opacity: 0.2;
-    filter: blur(8px);
-}
 
 .product-info h3 {
     font-size: 1.75rem;
