@@ -1,0 +1,7 @@
+# robots.txt for plolabs.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://plolabs.com/sitemap.xml
