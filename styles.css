@@ -84,10 +84,6 @@ body {
     100% { background-position: 200% 0; }
 }
 
-@keyframes orbit {
-    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
-}
 
 @keyframes pulse-circle {
     0%, 100% {
@@ -515,29 +511,10 @@ body {
     overflow: hidden;
 }
 
-.product-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: conic-gradient(from 0deg, transparent, rgba(0, 0, 0, 0.05), transparent 30%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    animation: orbit 10s linear infinite paused;
-    pointer-events: none;
-}
-
 .product-card:hover {
     transform: translateY(-8px);
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-}
-
-.product-card:hover::before {
-    opacity: 1;
-    animation-play-state: running;
 }
 
 .product-icon {
