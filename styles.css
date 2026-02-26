@@ -573,6 +573,11 @@ body {
     padding: 0;
 }
 
+.product-icon.colonia {
+    background: transparent;
+    padding: 0;
+}
+
 
 .product-info h3 {
     font-size: 1.75rem;
